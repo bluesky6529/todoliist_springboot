@@ -1,0 +1,19 @@
+name: Gradle Build
+
+on: 
+  push:
+    branches:
+    - master
+  pull_requests:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - users: actions/checkout@v2
+
+    - name: Set up JDK 1.8
+      users: actions/@v1
+
+      
